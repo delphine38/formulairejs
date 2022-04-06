@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <article class="formulaire">
+        <form action="traitement.php" method="post">
+            <h5 class="text-white">Contact form</h5>
+
+            <div class="row">
+                <section class="label col-4">
+                    <article>
+                        <label for="forname">Your name </label>
+                    </article>
+
+                    <article>
+                        <label for="formail">Your Email </label>
+                    </article>
+
+                    <article>
+                        <label for="forPhone">Phone* </label>
+                    </article>
+
+                    <article>
+                        <label for="forMessageSubject">Message Subject* </label>
+                    </article>
+
+                    <article>
+                        <label for="formessage">Message* </label>
+                    </article>
+
+                    <article>
+                        <label for="forVerification">Vérification* </label>
+                    </article>
+                </section>
+
+                <section class="input col-8">
+                    <article class="inputrow row">
+                        <article class="col-5">
+                            <input type="text" id="idFirstName" name="nameFirstName" placeholder="FirstName">
+                        </article>
+
+                        <article class="col-5">
+                            <input type="text" id="idLastName" name="nameLastName" placeholder="LastName">
+                        </article>
+                    </article>
+
+                    <article class="col-10">
+                        <input type="email" id="idMail" name="nameMail" placeholder="exemple@exemple.fr">
+                    </article>
+
+                    <article class="phone row">
+                        <article class="col-1">
+                            <input type="text" id="idPhone1" name="namePhone1" placeholder="###">
+                        </article>
+
+                        <article class="col-1">
+                            <input type="text" id="idPhone2" name="namePhone2" placeholder="###">
+                        </article>
+
+                        <article class="col-1">
+                            <input type="text" id="idPhone3" name="namePhone3" placeholder="###">
+                        </article>
+                    </article>
+
+                    <article>
+                        <select class="col-6" name="" id="">
+                            <option value="#">Other</option>
+                        </select>
+                    </article>
+
+                    <article>
+                        <textarea class="col-12" id="idMessage" name="nameMessage"></textarea>
+                    </article>
+
+                    <div>
+                        <img src="images/capcha.png" alt="">
+                    </div>
+            </div>
+
+            </section>
+            </div>
+
+
+
+            <hr class="hr">
+
+            <div class="button">
+                <button type="submit" valeur="enregister">SUBMIT FORM</button>
+            </div>
+        </form>
+    </article>
+
+    <script src="js.js"></script>
+    <script src="traitement.php"></script>
+</body>
+
+</html>

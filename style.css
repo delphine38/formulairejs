@@ -1,0 +1,40 @@
+.formulaire {
+    background-color: #4AA0C4;
+    width: 800px;
+    height: 500px;
+    margin: 10%;
+}
+
+.formulaire form {
+    padding: 40px;
+}
+
+label {
+    color: white;
+}
+
+button {
+    background-color: transparent;
+    border-color: white;
+    padding: 15px;
+    color: white;
+}
+
+.hr {
+    background-color: white;
+}
+
+/* label {
+    margin-top: 5px;
+    margin-bottom: 5px;
+} */
+
+/* input {
+    margin-top: 5px;
+    margin-bottom: 5px;
+} */
+
+.carrer {
+    border: 1px solid black;
+
+}
