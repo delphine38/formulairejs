@@ -1,4 +1,4 @@
-const idFirstName = document.getElementById('idFirstName');
+const idFirstName = document.getElementById("idFirstName");
 const log = document.getElementById('log');
 // const chocolat = document.getElementById('chocolat');
 
@@ -9,6 +9,8 @@ const log = document.getElementById('log');
 
 
 idFirstName.addEventListener('idFirstName', (updateValue),
-function updateValue(e){
+function updateValue(event){
     log.textContent = e.target.value;
-})
+      event.preventDefault();
+console.log(idFirstName);
+    })
