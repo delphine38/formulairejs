@@ -1,5 +1,6 @@
+const btn = document.querySelector('button');
 const idFirstName = document.getElementById("idFirstName");
-const log = document.getElementById('log');
+const formulaireObjetDelphine = {}
 // const chocolat = document.getElementById('chocolat');
 
 // idFirstName.addEventListener('change', (updateValue),
@@ -7,10 +8,11 @@ const log = document.getElementById('log');
 //     log.textContent = e.target.value;
 // })
 
+//fonction formulaireObjetDelphine.idFirstName
 
-idFirstName.addEventListener('idFirstName', (updateValue),
-function updateValue(event){
-    log.textContent = e.target.value;
-      event.preventDefault();
-console.log(idFirstName);
-    })
+btn.addEventListener('click', myFonction);
+function myFonction(event){
+    event.preventDefault();
+    formulaireObjetDelphine.idFirstName = idFirstName.value
+    console.log(formulaireObjetDelphine);
+}
