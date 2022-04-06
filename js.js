@@ -8,7 +8,7 @@ const log = document.getElementById('log');
 // })
 
 
-idFirstName.addEventListener('change', (updateValue),
+idFirstName.addEventListener('idFirstName', (updateValue),
 function updateValue(e){
     log.textContent = e.target.value;
 })
