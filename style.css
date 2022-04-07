@@ -34,7 +34,11 @@ button {
     margin-bottom: 5px;
 } */
 
-.carrer {
+/* .carrer {
     border: 1px solid black;
 
+} */
+
+.erreur {
+    visibility: hidden;
 }

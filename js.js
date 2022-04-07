@@ -7,16 +7,9 @@ const post = document.getElementById("post");
 const alternance = document.getElementById("alternance");
 const stage = document.getElementById("stage");
 const idMessage = document.getElementById("idMessage");
+const erreur = document.getElementsByClassName("erreur");
 
 const formulaireObjetDelphine = {}
-// const chocolat = document.getElementById('chocolat');
-
-// idFirstName.addEventListener('change', (updateValue),
-// function updateValue(e){
-//     log.textContent = e.target.value;
-// })
-
-//fonction formulaireObjetDelphine.idFirstName
 
 btn.addEventListener('click', myFonction);
 function myFonction(event){
@@ -34,16 +27,10 @@ function myFonction(event){
         (formulaireObjetDelphine.idMessage = idMessage.value)
     ){
         console.log(formulaireObjetDelphine);
+    }else{
+        erreur[0].style.visibility='visible';
+        console.log("Il y a un element manquant");
     }
     
-    // formulaireObjetDelphine.idFirstName = idFirstName.value;
-    // formulaireObjetDelphine.idLastName = idLastName.value;
-    // formulaireObjetDelphine.idMail = idMail.value;
-    // formulaireObjetDelphine.idPhone = idPhone.value;
-    // formulaireObjetDelphine.post = post.value;
-    // formulaireObjetDelphine.alternance = alternance.value;
-    // formulaireObjetDelphine.alternance = stage.value;
-    // formulaireObjetDelphine.idMessage = idMessage.value;
 
-    // console.log(formulaireObjetDelphine);
 }
